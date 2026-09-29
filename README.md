@@ -1,6 +1,6 @@
 # 🔎 NetScan Pro
 
-> A professional web-based TCP port scanning and network reconnaissance tool built with ASP.NET Web Forms and C#.
+> A web-based TCP port scanning and network reconnaissance tool built with ASP.NET Web Forms and C#.
 
 [![C#](https://img.shields.io/badge/C%23-.NET-blue.svg)](https://dotnet.microsoft.com/)
 [![ASP.NET](https://img.shields.io/badge/ASP.NET-Web%20Forms-blue.svg)](https://dotnet.microsoft.com/apps/aspnet)
