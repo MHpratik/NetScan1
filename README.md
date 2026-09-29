@@ -120,7 +120,7 @@ The application provides a clean cybersecurity-focused dashboard for performing 
 Users can enter:
 
 ```text
-Target: IP
+Target: IP/WEB SITE 
 
 Ports:
 22,80,443,3306,3389
