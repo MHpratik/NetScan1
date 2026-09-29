@@ -1,146 +1,90 @@
 <div align="center">
 
-# ⚡ NetScan1
+# ⚡ NETSCAN1
 
-### 🛡️ Advanced Web-Based TCP Port Scanner
+### `CYBERSECURITY • NETWORK RECONNAISSANCE • TCP ANALYSIS`
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=00FF9C&center=true&vCenter=true&width=700&lines=Scan+TCP+Ports+%F0%9F%94%8D;Detect+Running+Services+%F0%9F%9B%A1%EF%B8%8F;Analyze+Security+Risks+%E2%9A%A0%EF%B8%8F;Generate+Professional+PDF+Reports+%F0%9F%93%84" />
-
-<br>
-
-![ASP.NET](https://img.shields.io/badge/ASP.NET-Web%20Forms-512BD4?style=for-the-badge&logo=.net&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-Backend-239120?style=for-the-badge&logo=csharp&logoColor=white)
-![Security](https://img.shields.io/badge/Cybersecurity-Tool-00FF9C?style=for-the-badge&logo=hackthebox&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=2500&pause=700&color=00FF9C&center=true&vCenter=true&width=800&lines=Initializing+NetScan1...;Target+Detection+%5BOK%5D;TCP+Port+Scanning+%5BOK%5D;Service+Fingerprinting+%5BOK%5D;Banner+Analysis+%5BOK%5D;Security+Report+Generation+%5BOK%5D" />
 
 <br>
 
-**🔎 Scan • 🧠 Analyze • 🛡️ Detect • 📊 Report**
+![C#](https://img.shields.io/badge/C%23-ASP.NET-512BD4?style=for-the-badge&logo=csharp&logoColor=white)
+![ASP.NET](https://img.shields.io/badge/ASP.NET-Web%20Forms-0A66C2?style=for-the-badge)
+![Security](https://img.shields.io/badge/Cybersecurity-Network%20Scanner-00FF9C?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+
+<br>
+
+### 🔴 `SYSTEM STATUS: ONLINE`
+### 🟢 `SCANNER STATUS: READY`
 
 </div>
 
 ---
 
-## 🚀 About NetScan1
+# 🖥️ NETSCAN1
 
-**NetScan1** is a web-based cybersecurity port scanning application developed using **ASP.NET Web Forms and C#**.
+> **A modern web-based TCP port scanner designed for network reconnaissance, service identification, banner detection, risk classification, and security reporting.**
 
-The application allows users to enter a target hostname or IP address and scan selected TCP ports to determine their current state.
+NetScan1 is an **ASP.NET Web Forms cybersecurity application** developed using **C#**.
 
-NetScan1 can identify:
-
-- 🟢 Open ports
-- 🔴 Closed ports
-- 🟡 Timeout ports
-- 🔍 Common services
-- 🧾 Service banners and version information
-- ⚠️ Basic security risk levels
-- ⏱️ Port response latency
-- 🌐 Target IP resolution
-- 📄 Professional PDF reports
-
-> ⚠️ **Use this tool only against systems you own or have explicit permission to test.**
+It allows authorized users to enter a hostname/IP address and scan selected TCP ports. The application analyzes the response of each port and displays detailed information through a professional security dashboard.
 
 ---
 
-# ✨ Features
-
-<table>
-<tr>
-<td width="50%">
-
-### 🔍 Port Scanning
-- TCP port scanning
-- Custom port selection
-- Multiple ports at once
-- Connection timeout handling
-- Concurrent scanning
-
-</td>
-
-<td width="50%">
-
-### 🧠 Service Detection
-- Common service identification
-- Banner grabbing
-- Version detection
-- HTTP/HTTPS information
-- TCP service analysis
-
-</td>
-</tr>
-
-<tr>
-<td>
-
-### 🛡️ Security Analysis
-- Risk classification
-- High-risk port detection
-- Medium-risk port detection
-- Low-risk port detection
-- Informational results
-
-</td>
-
-<td>
-
-### 📊 Reporting
-- Live scan statistics
-- Scan duration
-- Response latency
-- Detailed port results
-- PDF report generation
-
-</td>
-</tr>
-</table>
-
----
-
-# 🎯 How It Works
+# ⚡ SYSTEM OVERVIEW
 
 ```text
-             ┌─────────────────────┐
-             │      TARGET         │
-             │  IP / Hostname      │
-             └──────────┬──────────┘
-                        │
-                        ▼
-             ┌─────────────────────┐
-             │   DNS Resolution    │
-             └──────────┬──────────┘
-                        │
-                        ▼
-             ┌─────────────────────┐
-             │    TCP Scanner      │
-             │  Selected Ports     │
-             └──────────┬──────────┘
-                        │
-             ┌──────────┴──────────┐
-             ▼                     ▼
-       ┌───────────┐        ┌──────────────┐
-       │ Connection│        │   Timeout    │
-       │ Successful│        │              │
-       └─────┬─────┘        └──────┬───────┘
-             │                     │
-             ▼                     ▼
-       ┌────────────┐        ┌────────────┐
-       │   Service  │        │   Timeout  │
-       │  Detection │        │   Result   │
-       └─────┬──────┘        └────────────┘
-             │
-             ▼
-       ┌────────────┐
-       │ Risk Level │
-       │  Analysis  │
-       └─────┬──────┘
-             │
-             ▼
-       ┌────────────┐
-       │ Dashboard  │
-       └─────┬──────┘
-             │
-             ▼
-       ┌────────────┐
-       │ PDF Report │
-       └────────────┘
+                 ┌─────────────────────────┐
+                 │       NETSCAN1           │
+                 │  NETWORK SECURITY TOOL   │
+                 └────────────┬────────────┘
+                              │
+                              ▼
+                    ┌──────────────────┐
+                    │   TARGET INPUT   │
+                    │ IP / HOSTNAME     │
+                    └────────┬─────────┘
+                             │
+                             ▼
+                    ┌──────────────────┐
+                    │  DNS RESOLUTION  │
+                    └────────┬─────────┘
+                             │
+                             ▼
+                  ┌───────────────────────┐
+                  │     TCP SCANNER       │
+                  └───────────┬───────────┘
+                              │
+               ┌──────────────┼──────────────┐
+               │              │              │
+               ▼              ▼              ▼
+          ┌─────────┐    ┌─────────┐    ┌─────────┐
+          │  OPEN   │    │ CLOSED  │    │ TIMEOUT │
+          └────┬────┘    └─────────┘    └─────────┘
+               │
+               ▼
+      ┌─────────────────────┐
+      │ SERVICE IDENTIFIER   │
+      └──────────┬──────────┘
+                 │
+                 ▼
+      ┌─────────────────────┐
+      │ BANNER / VERSION     │
+      │     DETECTION        │
+      └──────────┬──────────┘
+                 │
+                 ▼
+      ┌─────────────────────┐
+      │    RISK ANALYSIS    │
+      └──────────┬──────────┘
+                 │
+                 ▼
+      ┌─────────────────────┐
+      │ SECURITY DASHBOARD  │
+      └──────────┬──────────┘
+                 │
+                 ▼
+      ┌─────────────────────┐
+      │     PDF REPORT      │
+      └─────────────────────┘
