@@ -1,139 +1,126 @@
-<div align="center">
+# 🔎 NetScan Pro
 
-# ⚡ NetScan1
+> A professional web-based TCP port scanning and network reconnaissance tool built with ASP.NET Web Forms and C#.
 
-### 🚀 Web-Based TCP Port Scanner & Network Security Analyzer
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=00E5FF&center=true&vCenter=true&width=750&lines=Cybersecurity+Port+Scanner;TCP+Service+Detection;Banner+%26+Version+Detection;Risk+Analysis+%26+PDF+Reports" alt="Typing Animation" />
-
-<br>
-
-![GitHub repo size](https://img.shields.io/github/repo-size/ingal/NetScan1?style=for-the-badge&color=00e5ff)
-![GitHub stars](https://img.shields.io/github/stars/ingal/NetScan1?style=for-the-badge&color=ffd700)
-![GitHub forks](https://img.shields.io/github/forks/ingal/NetScan1?style=for-the-badge&color=9b59b6)
-![GitHub license](https://img.shields.io/github/license/ingal/NetScan1?style=for-the-badge&color=00ff88)
-
-<br>
-
-**A lightweight cybersecurity tool for discovering open TCP ports, identifying services, analyzing banners, and generating professional scan reports.**
-
-</div>
+[![C#](https://img.shields.io/badge/C%23-.NET-blue.svg)](https://dotnet.microsoft.com/)
+[![ASP.NET](https://img.shields.io/badge/ASP.NET-Web%20Forms-blue.svg)](https://dotnet.microsoft.com/apps/aspnet)
+[![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey.svg)](https://www.microsoft.com/windows/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE.txt)
+[![Security](https://img.shields.io/badge/Purpose-Cybersecurity-red.svg)](#-responsible-use)
 
 ---
 
-## 🖥️ About The Project
+## 📌 Overview
 
-**NetScan1** is a web-based TCP port scanning application developed using **ASP.NET Web Forms and C#**.
+**NetScan Pro** is a web-based TCP port scanning application designed for network security analysis and educational cybersecurity testing.
 
-The application allows a user to enter a target hostname or IP address and scan selected TCP ports. It determines whether each port is **Open, Closed, or Timed Out**, identifies commonly associated services, attempts to retrieve service banners/version information, and assigns a basic risk level.
+The application allows users to specify a target hostname or IP address and scan selected TCP ports. It analyzes the connection status of each port and provides additional information such as common service identification, banner/version information, response latency, and basic risk classification.
 
-The scan results are displayed through a modern dashboard and can be exported as a **professional PDF security report**.
-
-> ⚠️ **For authorized security testing only. Scan systems and networks that you own or have explicit permission to test.**
+Scan results are displayed through a professional dashboard and can be exported as a detailed PDF security report.
 
 ---
 
-# ✨ Features
+## ✨ Features
 
-<table>
-<tr>
-<td width="50%">
+### 🔍 TCP Port Scanning
+- Scan specific TCP ports
+- Support for multiple port values
+- Fast asynchronous scanning
+- Configurable connection timeout
+- Concurrent scanning for improved performance
 
-### 🔍 Port Scanning
-- TCP port scanning
-- Specific-port selection
-- Hostname/IP support
-- Configurable scan targets
-- Connection timeout handling
+### 🌐 Target Resolution
+- Hostname resolution
+- IPv4 address detection
+- Target information display
+- TCP connectivity testing
 
-</td>
+### 🛠️ Service Detection
+NetScan Pro identifies common services associated with scanned ports, including:
 
-<td width="50%">
+- FTP
+- SSH
+- SMTP
+- HTTP
+- HTTPS
+- DNS
+- MySQL
+- Microsoft SQL Server
+- PostgreSQL
+- Redis
+- MongoDB
+- RDP
+- VNC
 
-### 🧠 Service Detection
-- Common service identification
-- TCP banner detection
-- HTTP banner detection
-- HTTPS banner detection
-- Version information when available
+### 🏷️ Banner & Version Detection
 
-</td>
-</tr>
+Where supported, the scanner attempts to retrieve service information through:
 
-<tr>
-<td>
+- HTTP banners
+- HTTPS responses
+- FTP banners
+- SSH banners
+- SMTP banners
+- POP3 banners
+- IMAP banners
 
-### 🛡️ Security Analysis
-- Open/Closed/Timeout classification
-- Basic port risk classification
-- High/Medium/Low risk levels
-- Target information
+This information can help security analysts understand what services are exposed on a target system.
+
+### ⚠️ Risk Classification
+
+Scanned ports are assigned a basic risk category:
+
+| Risk | Description |
+|------|-------------|
+| 🔴 HIGH | Commonly sensitive or remotely accessible services |
+| 🟠 MEDIUM | Services that may require additional security review |
+| 🟢 LOW | Common web services |
+| 🔵 INFO | Informational / unclassified service |
+
+> Risk classification is a basic indicator and should not be treated as a complete vulnerability assessment.
+
+### 📊 Security Dashboard
+
+The dashboard provides:
+
+- Total ports scanned
+- Open ports
+- Closed ports
+- Timeout results
+- Scan duration
+- Target hostname
+- Resolved IP address
+- Port status
+- Service information
+- Banner/version information
 - Response latency
 
-</td>
+### 📄 PDF Security Reports
 
-<td>
+NetScan Pro can generate a structured PDF report containing:
 
-### 📄 Reporting
-- Professional PDF reports
+- Scan information
+- Target details
 - Scan summary
 - Port results
-- Service information
-- Banner/version details
-- Security risk information
-
-</td>
-</tr>
-</table>
+- Open-port information
+- Service identification
+- Version/banner information
+- Risk classification
+- Response latency
 
 ---
 
-# ⚙️ How It Works
+## 🖥️ Interface
+
+The application provides a clean cybersecurity-focused dashboard for performing scans and reviewing results.
+
+### Target & Port Selection
+
+Users can enter:
 
 ```text
-                    ┌──────────────────┐
-                    │   Target Host    │
-                    │  IP / Hostname   │
-                    └────────┬─────────┘
-                             │
-                             ▼
-                  ┌─────────────────────┐
-                  │   DNS Resolution    │
-                  └──────────┬──────────┘
-                             │
-                             ▼
-                  ┌─────────────────────┐
-                  │   TCP Port Scan     │
-                  └──────────┬──────────┘
-                             │
-               ┌─────────────┼─────────────┐
-               ▼             ▼             ▼
-          ┌────────┐    ┌─────────┐   ┌─────────┐
-          │  OPEN  │    │ CLOSED  │   │ TIMEOUT │
-          └────┬───┘    └─────────┘   └─────────┘
-               │
-               ▼
-       ┌───────────────────┐
-       │ Service Detection │
-       └─────────┬─────────┘
-                 │
-                 ▼
-       ┌───────────────────┐
-       │ Banner / Version  │
-       │     Detection     │
-       └─────────┬─────────┘
-                 │
-                 ▼
-       ┌───────────────────┐
-       │    Risk Analysis  │
-       └─────────┬─────────┘
-                 │
-                 ▼
-       ┌───────────────────┐
-       │ Dashboard Results │
-       └─────────┬─────────┘
-                 │
-                 ▼
-       ┌───────────────────┐
-       │   PDF Report      │
-       └───────────────────┘
+Target: 192.168.1.10
+
+Ports:
+22,80,443,3306,3389
